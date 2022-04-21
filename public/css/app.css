@@ -46,12 +46,12 @@
 .quiz__footer{
   display: flex;
   width: 100%;
-  height: 100px;
+  height: 140px;
   bottom: 0;
   justify-content: center;
   border-top: 1px solid wheat;
-  border-color: wheat;
-  background-color: wheat;
+  border-color: #334456;
+  background-color: #334456;
   border-radius: 0px 0px 10px 10px;
 }
 .box_question{
@@ -101,7 +101,8 @@ li:hover{
   height:35px;
   outline: none;
   border: 0;
-  color: black;
+   color: white;
+   font-weight: 900;
   font-size: 18px;
   cursor: pointer;
   border-radius: 15px;
