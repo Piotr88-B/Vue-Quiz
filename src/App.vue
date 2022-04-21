@@ -15,6 +15,10 @@
     <div class="main__quiz" v-for="(element, index) in questions.slice(a,b)" :key="index">
       <div class="box__question">
         <h3>{{element.question}}</h3>
+   
+           <img :src="`${element.image}`"  />
+        
+    
       </div>
       <div class="box__sugestion">
         <ul>
@@ -43,7 +47,7 @@ export default {
     return {
       questions: [{
           question: '1. Urządzenie techniczne objęte dozorem technicznym może być eksploatowane na podstawie',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
               text: '• Zezwolenia ustnego lub pisemnego wydanego przez upoważnionego konserwatora',
               correct: false
@@ -64,7 +68,7 @@ export default {
         },
         {
           question: '2.Które z wymienionych czynności nie należą do zakresu obowiązków obsługującego UTB',
-          img: '',
+    image: require('@/assets/blank.png'),
           answers: [{
             text: '•	Wykonywanie niewielkich napraw urządzenia w ramach posiadanego wykształcenia i umiejętności',
             correct: true
@@ -82,7 +86,7 @@ export default {
 
         {
           question: '3.Terminy przeglądów konserwacyjnych urządzeń technicznych',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	są zawarte w instrukcji eksploatacji urządzenia',
             correct: true
@@ -99,7 +103,7 @@ export default {
         },
         {
           question: '4.Dozorem technicznym nazywamy',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	określone ustawa działania zmierzające do zapewnienia bezpiecznego funkcjonowania urządzeń technicznych i urządzeń do odzyskiwania par paliwa oraz działania zmierzające do zapewnienia bezpieczeństwa publicznego w tych obszarach',
             correct: true
@@ -115,7 +119,7 @@ export default {
           }]
         }, {
           question: '5.Dozór techniczny nad urządzeniami technicznymi wykonuje',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	Urząd Dozoru Technicznego oraz specjalistyczne jednostki dozoru technicznego',
             correct: true
@@ -130,7 +134,8 @@ export default {
             correct: false
           }]
         }, {
-          question: '6.Zmiana parametrów technicznych lub zmiana konstrukcji urządzenia technicznego tratowana jest jako',
+          question: '6.Zmiana parametrów technicznych lub zmiana konstrukcji urządzenia technicznego traktowana jest jako',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	modernizacja urządzenia technicznego',
             correct: true
@@ -146,7 +151,7 @@ export default {
           }]
         }, {
           question: '7.Uzgodniona naprawę lub modernizacje urządzeń technicznych maże wykonać',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	naprawiający lub modernizujący, który posiada uprawnienie wydane przez organ właściwej jednostki dozoru technicznego',
             correct: true
@@ -162,7 +167,7 @@ export default {
           }]
         }, {
           question: '8.Ustawa o dozorze technicznym określa następujące formy dozoru technicznego',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	całkowita, częściowa, ograniczona',
             correct: false
@@ -178,7 +183,7 @@ export default {
           }]
         }, {
           question: '9.Decyzje zezwalająca na eksploatacje urządzenia technicznego wydaje',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	konserwator po wykonaniu przeglądu z wynikiem pozytywnym',
             correct: false
@@ -194,7 +199,7 @@ export default {
           }]
         }, {
           question: '10.Obsługujący urządzenie techniczne może podjąć prace gdy',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	urządzenie posiada ważna decyzje zezwalająca na eksploatacje jeżeli wymagają tego odpowiednie przepisy',
             correct: false
@@ -211,7 +216,7 @@ export default {
         },
         {
           question: '11.Obsługujący urządzenie techniczne może podjąć pracę gdy',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	urządzenie posiada aktualny wpis w dzienniku konserwacji potwierdzający sprawność urządzenia',
             correct: false
@@ -227,7 +232,7 @@ export default {
           }]
         }, {
           question: '12.W przypadku nieprzestrzegania przez eksploatującego przepisów o dozorze technicznym eksploatujący',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	otrzymuje pisemne upomnienie',
             correct: false
@@ -243,7 +248,7 @@ export default {
           }]
         }, {
           question: '13.W przypadku stwierdzenia zagrożenia dla życia lub zdrowia ludzkiego oraz mienia i środowiska inspektor',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	wydaje decyzje wstrzymująca eksploatacje urządzenia technicznego',
             correct: true
@@ -259,7 +264,7 @@ export default {
           }]
         }, {
           question: '14.W przypadku niebezpiecznego uszkodzenia urządzenia technicznego lub nieszczęśliwego wypadku eksploatujący',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	niezwłocznie powiadamia UDT o zaistniałym zdarzeniu',
             correct: true
@@ -275,7 +280,7 @@ export default {
           }]
         }, {
           question: '15.Zaświadczenie kwalifikacyjne do obsługi może zostać cofnięte przez',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	organ właściwej jednostki dozoru technicznego',
             correct: true
@@ -291,7 +296,7 @@ export default {
           }]
         }, {
           question: '16.Urządzenia techniczne nieobjęte dozorem technicznym to',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	żurawie o udźwigu do 3,2 t',
             correct: false
@@ -307,7 +312,7 @@ export default {
           }]
         }, {
           question: '17.Urządzenia techniczne objęte dozorem technicznym to',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	przenośniki kabinowe i krzesełkowe',
             correct: false
@@ -323,7 +328,7 @@ export default {
           }]
         }, {
           question: '18.Niebezpieczne uszkodzenie urządzenia technicznego to',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	każda usterka UTB',
             correct: false
@@ -340,7 +345,7 @@ export default {
         },
         {
           question: '19.Nieszczęśliwy wypadek to',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	nagłe zdarzenie, które spowodowało obrażenia ciała lub śmierć',
             correct: true
@@ -356,7 +361,7 @@ export default {
           }]
         }, {
           question: '20.Podnoszenie i przenoszenie osób przez urządzenie techniczne przeznaczone wyłącznie do transportu ładunków wymaga',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	uzgodnienia z organem właściwej jednostki dozoru technicznego',
             correct: true
@@ -372,7 +377,7 @@ export default {
           }]
         }, {
           question: '21.Odpowiedzialnym za zapewnienie właściwej obsługi i konserwacji urządzenia technicznego jest',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	eksploatujący urządzenie techniczne',
             correct: true
@@ -389,7 +394,7 @@ export default {
         },
         {
           question: '22.Wymagane przepisami prawa przeglądy konserwacyjne wykonuje',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	osoba posiadająca zaświadczenie kwalifikacyjne do konserwacji',
             correct: false
@@ -406,7 +411,7 @@ export default {
         },
         {
           question: '23.Dzienni konserwacji urządzenia technicznego prowadzi',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '23.Dzienni konserwacji urządzenia technicznego prowadzi',
             correct: false
@@ -423,7 +428,7 @@ export default {
         },
         {
           question: '24.Badania odbiorcze przeprowadza się dla urządzeń technicznych',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	w terminach zgodnych z zapisami rozporządzenia w sprawie warunków technicznych dozoru technicznego',
             correct: false
@@ -439,7 +444,7 @@ export default {
           }]
         }, {
           question: '25.Badania okresowe przeprowadza się dla urządzeń technicznych objętych dozorem',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	ograniczonym',
             correct: false
@@ -455,7 +460,7 @@ export default {
           }]
         }, {
           question: '26.Nieobecność konserwującego na badaniu urządzenia technicznego wymaga min.',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	wcześniejszego uzgodnienia tego faktu z organem właściwej jednostki dozoru technicznego',
             correct: true
@@ -471,6 +476,7 @@ export default {
           }]
         }, {
           question: '27.Kandydat na obsługującego urządzenie techniczne musi',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	mieć ukończone 18 lat',
             correct: true
@@ -486,7 +492,7 @@ export default {
           }]
         }, {
           question: '28.Obsługujący urządzenie techniczne ma obowiąże przerwać prace gdy',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	jego stan fizyczny i psychiczny w dniu pracy jest nieodpowiedni',
             correct: false
@@ -502,7 +508,7 @@ export default {
           }]
         }, {
           question: '29.Terminy przeglądów konserwacyjnych urządzenia mogą być określone',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	w instrukcji eksploatacji urządzenia',
             correct: false
@@ -518,7 +524,7 @@ export default {
           }]
         }, {
           question: '30.Terminy badan obrusowych i doraźnych kontrolnych UTB określone są',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	w ustawie o dozorze technicznym',
             correct: false
@@ -534,7 +540,7 @@ export default {
           }]
         }, {
           question: '31.Obowiązkiem obsługującego urządzenie techniczne jest',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	przestrzeganie instrukcji eksploatacji w zakresie obsługi urządzenia',
             correct: true
@@ -550,7 +556,7 @@ export default {
           }]
         }, {
           question: '32.Urządzenie techniczne można eksploatować na podstawie',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	aktualnej naklejki organu właściwej jednostki dozoru technicznego określającej termin kolejnego badania',
             correct: false
@@ -566,7 +572,7 @@ export default {
           }]
         }, {
           question: '33.Po wykonanych czynnościach przy urządzeniu technicznym inspektor sporządza',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	instrukcje eksploatacji urządzenia',
             correct: false
@@ -582,7 +588,7 @@ export default {
           }]
         }, {
           question: '34.Naprawę i modernizacje urządzenia technicznego wykonuje',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	operator w ramach posiadanych umiejętności',
             correct: false
@@ -599,7 +605,7 @@ export default {
         },
         {
           question: '35.Bezpośrednio odpowiedzialnym za bezpieczna eksploatację urządzenia technicznego jest',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	obsługujący urządzenie',
             correct: true
@@ -615,7 +621,7 @@ export default {
           }]
         }, {
           question: '36.Informacje dotyczące zasad bezpiecznej obsługi urządzenia są zawarte w',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	instrukcji eksploatacji urządzenia',
             correct: true
@@ -631,7 +637,7 @@ export default {
           }]
         }, {
           question: '37.W ramach czynności przed rozpoczęciem pracy Obsługujący',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	sprawdza stan techniczny urządzenia poprzez oględziny',
             correct: false
@@ -647,7 +653,7 @@ export default {
           }]
         }, {
           question: '38.Zaświadczenia kwalifikacyjne do obsługi urządzeń technicznych podlegających dozorowi technicznemu wydaje',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	firma szkoleniowa po pozytywnym wyniku egzaminu sprawdzającego',
             correct: false
@@ -663,7 +669,7 @@ export default {
           }]
         }, {
           question: '39.Przeciążanie UTB w trakcie pracy',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	jest zabronione',
             correct: true
@@ -679,7 +685,7 @@ export default {
           }]
         }, {
           question: '40.Badania doraźne eksploatacyjne wykonuje się m.in.',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	po każdym usunięciu usterki przez konserwatora',
             correct: false
@@ -695,7 +701,7 @@ export default {
           }]
         }, {
           question: '41.Obowiązki obsługującego określone są',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	w instrukcji eksploatacji urządzenia',
             correct: true
@@ -711,7 +717,7 @@ export default {
           }]
         }, {
           question: '42.Badania okresowe urządzenia technicznego są wykonywane przez',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	konserwatora posiadającego odpowiednie zaświadczenie kwalifikacyjne',
             correct: false
@@ -727,7 +733,7 @@ export default {
           }]
         }, {
           question: '43.Jednostka dozoru technicznego jest',
-          img: '',
+      image: require('@/assets/blank.png'),
           answers: [{
             text: '•	Urząd Dozoru Technicznego',
             correct: false
@@ -743,7 +749,7 @@ export default {
           }]
         }, {
           question: '44.Zaświadczenia kwalifikacyjne uprawniające do obsługi urządzeń technicznych ważne są na terenie',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	Rzeczypospolitej Polskiej',
             correct: true
@@ -759,7 +765,7 @@ export default {
           }]
         }, {
           question: '45.Obowiązek stosowania środków ochrony indywidualnej przez operatorów urządzeń technicznych wynika z',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	instrukcji eksploatacji producenta',
             correct: false
@@ -775,7 +781,7 @@ export default {
           }]
         }, {
           question: '46.Zgodnie z rozporządzeniem Rady Ministrów w sprawie rodzajów urządzeń technicznych podlegających dozorowi technicznemu przepisom dozoru technicznego podlegają',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	dźwigi, żurawie, suwnice, wciągarki i wciągniki',
             correct: false
@@ -791,7 +797,7 @@ export default {
           }]
         }, {
           question: '47.Instrukcja eksploatacji może nie zawierać',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	informacji o terminach i zakresie przeglądów konserwacyjnych UTB',
             correct: false
@@ -807,7 +813,7 @@ export default {
           }]
         }, {
           question: '48.Księga rewizyjna urządzenia musi zawierać',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zbiór protokołów z badan wykonywanych przez jednostkę inspekcyjna',
             correct: true
@@ -823,7 +829,7 @@ export default {
           }]
         }, {
           question: '49.Decyzja wydana przez UDT',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	nie podlega odwołaniu',
             correct: false
@@ -839,7 +845,7 @@ export default {
           }]
         }, {
           question: '50.Do egzaminu sprawdzającego kwalifikacje może przystąpić osoba, która',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	złożyła wniosek o sprawdzenie kwalifikacji',
             correct: false
@@ -855,7 +861,7 @@ export default {
           }]
         }, {
           question: '51.Po zakończonym badaniu technicznym z wynikiem pozytywnym inspektor UDT',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	przedłuża ważność świadectwa kwalifikacji operatora',
             correct: false
@@ -871,7 +877,7 @@ export default {
           }]
         }, {
           question: '52.Zaświadczenia kwalifikacyjne',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	są ważne bezterminowo',
             correct: false
@@ -887,7 +893,7 @@ export default {
           }]
         }, {
           question: '53.Dokonujący przeróbek urządzenia technicznego bez uzgodnienia z organem właściwej jednostki dozoru technicznego',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	podlega karze grzywny lub ograniczenia wolności',
             correct: true
@@ -903,7 +909,7 @@ export default {
           }]
         }, {
           question: '54.Kto dopuszcza do eksploatacji urządzenie techniczne bez ważnej decyzji zezwalającej na eksploatację',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	podlega karze grzywny lub ograniczenia wolności',
             correct: true
@@ -919,7 +925,7 @@ export default {
           }]
         }, {
           question: '55.Instrukcja eksploatacji to',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zbiór informacji niezbędnych do bezpiecznej eksploatacji urządzenia udostępniany przez producenta',
             correct: true
@@ -935,7 +941,7 @@ export default {
           }]
         }, {
           question: '56.Zaświadczeń kwalifikacyjnych do obsługi nie wymaga się',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	jeżeli urządzenie jest obsługiwane przez jego właściciela',
             correct: false
@@ -951,7 +957,7 @@ export default {
           }]
         }, {
           question: '57.Osoba posiadająca Zaświadczenia kwalifikacyjne może obsługiwać',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	tylko urządzenia wymienione w zakresie uprawnienia',
             correct: true
@@ -967,7 +973,7 @@ export default {
           }]
         }, {
           question: '58. Obowiązkiem obsługującego urządzenie techniczne jest ',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	odmówić obsługi urządzenia, jeżeli wygasła decyzja zezwalająca na eksploatacje tego urządzenia',
             correct: false
@@ -983,7 +989,7 @@ export default {
           }]
         }, {
           question: '59.Zaświadczenie kwalifikacyjne do obsługi urządzeń technicznych są',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	ważne na terenie Unii Europejskiej',
             correct: false
@@ -999,7 +1005,7 @@ export default {
           }]
         }, {
           question: '60.Obsługujący który jest świadkiem wypadku ma obowiązek',
-          img: '',
+       image: require('@/assets/blank.png'),
           answers: [{
             text: '•	udzielić pomocy ofierze (lub ofiarom) wypadku',
             correct: false
@@ -1015,7 +1021,7 @@ export default {
           }]
         }, {
           question: '61.Obsługującemu nie wolno',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	podnosić ładunków, których masy nie potrafi określić',
             correct: true
@@ -1031,7 +1037,7 @@ export default {
           }]
         }, {
           question: '62.Formami dozoru technicznego są',
-          img: '',
+       image: require('@/assets/blank.png'),
           answers: [{
             text: '•	dozór pełny, dozór uproszczony, dozór ograniczony',
             correct: true
@@ -1047,7 +1053,7 @@ export default {
           }]
         }, {
           question: '63.Podnoszenie osób urządzeniami, które zostały zaprojektowane i wykonane wyłącznie do podnoszenia ładunków',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	jest dopuszczalne, po zapewnieniu odpowiedniego poziomu bezpieczeństwa',
             correct: false
@@ -1063,7 +1069,7 @@ export default {
           }]
         }, {
           question: 'jest dopuszczalne jednorazowo na pisemne polecenie przełożonego',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	jest dopuszczalne, pod warunkiem opracowania przez eksploatującego szczegółowych warunków eksploatacji, opisujących czynności organizacyjno-techniczne minimalizujące ryzyko',
             correct: true
@@ -1079,7 +1085,7 @@ export default {
           }]
         }, {
           question: '65.Przebywanie osób pod ładunkiem przenoszonym jest',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zawsze niedozwolone',
             correct: true
@@ -1095,7 +1101,7 @@ export default {
           }]
         }, {
           question: '66.Przenoszenia ładunków nad osobami jest',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	dozwolone pod warunkiem uzyskania pisemnego zezwolenia od osoby kierującej transportem',
             correct: false
@@ -1111,7 +1117,7 @@ export default {
           }]
         }, {
           question: '67.Zaświadczenia kwalifikacyjne do obsługi urządzeń technicznych podlegających dozorowi technicznemu wydaje',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	właściciel urządzenia',
             correct: false
@@ -1127,7 +1133,7 @@ export default {
           }]
         }, {
           question: '68.Komisja egzaminacyjna powiadamia osobę zainteresowana o wyniku egzaminu',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	w ciągu 7 dni po egzaminie w formie pisemnej',
             correct: false
@@ -1143,7 +1149,7 @@ export default {
           }]
         }, {
           question: '69.Dziennik konserwacji powinien być prowadzony',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	tylko w formie papierowej',
             correct: false
@@ -1159,7 +1165,7 @@ export default {
           }]
         }, {
           question: '70.Instrukcja stanowiskowa',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	jest zawsze dostarczana wraz z instrukcja obsługi przez producenta urządzenia',
             correct: false
@@ -1175,7 +1181,7 @@ export default {
           }]
         }, {
           question: '71.Po upływie terminu ważności zaświadczenia kwalifikacyjnego do obsługi urządzenia Obsługujący',
-          img: '',
+       image: require('@/assets/blank.png'),
           answers: [{
             text: '•	może obsługiwać UTB o ile kontynuuje prace u tego samego pracodawcy',
             correct: false
@@ -1191,7 +1197,7 @@ export default {
           }]
         }, {
           question: '72.Przedłużenie ważności Zaświadczenie kwalifikacyjnego następuje',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	na pisemny wniosek obsługującego',
             correct: true
@@ -1207,7 +1213,7 @@ export default {
           }]
         }, {
           question: '73.Udźwig UTB to parametr urządzenia Bezpośrednio związany z',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	maksymalna wysokością podnoszonego ładunku',
             correct: false
@@ -1223,7 +1229,7 @@ export default {
           }]
         }, {
           question: '74.Masą netto 1000 l wody wynosi od',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	800 kg',
             correct: false
@@ -1239,7 +1245,7 @@ export default {
           }]
         }, {
           question: '75.Masą ładunku składającego się z 40 opakowań po 25 kg każdy wynosi',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	800 kg',
             correct: false
@@ -1255,7 +1261,7 @@ export default {
           }]
         }, {
           question: '76.Masą 60 kartonów po 20 kg każdy wynosi',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	800 kg',
             correct: false
@@ -1272,7 +1278,7 @@ export default {
           }]
         }, {
           question: '77.Masę podnoszonego ładunku można określić na podstawie',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zawieszki zbiorczej znajdującej się na transportowanym ładunku',
             correct: false
@@ -1288,7 +1294,7 @@ export default {
           }]
         }, {
           question: '78.Informacja dotycząca udźwigu urządzenia może być zawarta',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	w instrukcji eksploatacji',
             correct: false
@@ -1304,7 +1310,7 @@ export default {
           }]
         }, {
           question: '79.Prawidłowe określenie jednostki udźwigu to',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	kg',
             correct: true
@@ -1320,7 +1326,7 @@ export default {
           }]
         }, {
           question: '80.Które z elementów nie wchodzą w skład układu hydraulicznego wózka jezdniowego podnośnikowego?',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	pompa, zamek hydrauliczny, filtr oleju',
             correct: false
@@ -1336,7 +1342,7 @@ export default {
           }]
         }, {
           question: '81.Zamek hydrauliczny zapewnia ochronę przed',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	nadmiernym wzrostem ciśnienia w układzie hydraulicznym',
             correct: false
@@ -1352,7 +1358,7 @@ export default {
           }]
         }, {
           question: '82.Elementem przekształcającym ciśnienie oleju hydraulicznego w ruch mechaniczny jest',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	pompa tłoczkowa',
             correct: false
@@ -1368,7 +1374,7 @@ export default {
           }]
         }, {
           question: '83.Elementem wytwarzającym ciśnienie w układzie hydraulicznym wózka jezdniowego podnośnikowego jest',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	pompa tłoczkowa',
             correct: false
@@ -1384,7 +1390,7 @@ export default {
           }]
         }, {
           question: '84.Zawór przelewowy instalowany w układzie hydraulicznym wózków jezdniowych podnośnikowych ma za zadanie',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zasilanie układu hydraulicznego',
             correct: false
@@ -1400,7 +1406,7 @@ export default {
           }]
         }, {
           question: '85.Bezpieczny sposób sprawdzenia działania zaworu przelewowego przeprowadza się',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	z ładunkiem nominalnym na wysokości ok 1/3 wysokości podnoszenia',
             correct: false
@@ -1416,7 +1422,7 @@ export default {
           }]
         }, {
           question: '86.Rozdzielacz hydrauliczny instalowany jest w układzie w celu',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	dławienia ciśnienia w poszczególnych obwodach',
             correct: false
@@ -1432,7 +1438,7 @@ export default {
           }]
         }, {
           question: '87.Elementem wykonawczym w układzie hydraulicznym wózka jezdniowego podnośnikowego jest',
-          img: '',
+     image: require('@/assets/blank.png'),
           answers: [{
             text: '•	siłownik mechanizmu podnoszenia',
             correct: false
@@ -1448,7 +1454,7 @@ export default {
           }]
         }, {
           question: '88.Elementem chroniącym układ hydrauliczny przed nadmiernym wzrostem ciśnienia jest',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zamek hydrauliczny',
             correct: false
@@ -1464,7 +1470,7 @@ export default {
           }]
         }, {
           question: '89.Zawór zwrotno-dławiący montowany w układzie podnoszenia wózka jezdniowego podnośnikowego ma na celu',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zmniejszenie ciśnienia oleju',
             correct: false
@@ -1480,7 +1486,7 @@ export default {
           }]
         }, {
           question: '90.Zawór bezpieczeństwa w układzie hydraulicznym wózka jezdniowego podnośnikowego',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	utrzymuje nurnik siłownika podnoszenia w stałym położeniu',
             correct: false
@@ -1496,7 +1502,7 @@ export default {
           }]
         }, {
           question: '91.W przypadku wzrostu ciśnienia nadmiar oleju odprowadzany jest',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	z powrotem do zbiornika oleju',
             correct: true
@@ -1512,7 +1518,7 @@ export default {
           }]
         }, {
           question: '92.Kryteria i warunki poprawnego wykonania prób układu hydraulicznego określa',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	wytwórca urządzenia',
             correct: true
@@ -1528,7 +1534,7 @@ export default {
           }]
         }, {
           question: '93.Akumulatory w elektrycznym wózku podnośnikowym',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	są źródłem zasilania układów',
             correct: false
@@ -1544,7 +1550,7 @@ export default {
           }]
         }, {
           question: '94.Parametry podane przez producenta na tabliczce znamionowej akumulatorów to',
-          img: '',
+      image: require('@/assets/blank.png'),
           answers: [{
             text: '•	napięcie znamionowe [V]',
             correct: false
@@ -1560,7 +1566,7 @@ export default {
           }]
         }, {
           question: '95.Wyłączni bezpieczeństwa STOP jest',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zabezpieczony przed przypadkowym zadziałaniem',
             correct: false
@@ -1576,7 +1582,7 @@ export default {
           }]
         }, {
           question: '96.Wyłącznik bezpieczeństwa STOP',
-          img: '',
+       image: require('@/assets/blank.png'),
           answers: [{
             text: '•	wyłącza działanie mechanizmów jazdy',
             correct: false
@@ -1592,7 +1598,7 @@ export default {
           }]
         }, {
           question: '97.Jakiego rodzaju ogumienie stosowane jest w wózkach jezdniowych podnośnikowych',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	pełne',
             correct: false
@@ -1608,7 +1614,7 @@ export default {
           }]
         }, {
           question: '98.Kto decyduje o rodzaju i wielkości opon zastosowanych w wózku',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	producent opon',
             correct: false
@@ -1625,7 +1631,7 @@ export default {
         }, {
           question: '99.Graniczne zużycie opon super elastycznych (w przypadku braku innych wytycznych) to',
 
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	minimalna wartość bieżnika 1,6 mm',
             correct: false
@@ -1641,7 +1647,7 @@ export default {
           }]
         }, {
           question: '100.Jaki rodzaj zużycia wyklucza opony pełne z dalszej eksploatacji',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	wszelkie przecięcia i rozwarstwienia gumy, uszkodzenia mechaniczne',
             correct: false
@@ -1658,7 +1664,7 @@ export default {
         },
         {
           question: '101.Świecąca się kontrolka ciśnienia oleju może świadczyć o',
-          img: './assent/olej.png',
+          image: require('@/assets/olej.png'),
           answers: [{
             text: '•	niskim poziomie oleju',
             correct: false
@@ -1674,7 +1680,7 @@ export default {
           }]
         }, {
           question: '102.Oznaczenie przedstawione na rysunku znajduje się na dźwigni',
-          img: './assent/dzwig.png',
+          image: require('@/assets/dzwig.png'),
           answers: [{
             text: '•	mechanizmu podnoszenia',
             correct: true
@@ -1690,7 +1696,7 @@ export default {
           }]
         }, {
           question: '103.Widząc świecąca się kontrolkę operator',
-          img: './assent/operator.png',
+          image: require('@/assets/operator.png'),
           answers: [{
             text: '•	powinien sprawdzić, czy pasy są prawidłowo zapięte',
             correct: true
@@ -1706,7 +1712,7 @@ export default {
           }]
         }, {
           question: '104.Dźwignia oznaczona poniższym piktogramem po wychyleniu przez operatora do przodu spowoduje',
-          img: './assent/pikto1.png',
+          image: require('@/assets/pikto1.png'),
           answers: [{
             text: '•	ruch wideł w dół',
             correct: true
@@ -1722,7 +1728,7 @@ export default {
           }]
         }, {
           question: '105.Dźwignia oznaczona poniższym piktogramem po wychyleniu przez operatora spowoduje',
-          img: './assent/wychylenie.png',
+          image: require('@/assets/wychylenie.png'),
           answers: [{
             text: '•	ruch wideł w dół',
             correct: false
@@ -1738,7 +1744,7 @@ export default {
           }]
         }, {
           question: '106.Wózki jezdniowe podnośnikowe czołowe z fotelem dla operatora musza być wyposażone w',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	hamulec zasadniczy',
             correct: false
@@ -1754,7 +1760,7 @@ export default {
           }]
         }, {
           question: '107.Hamowanie jazdy wózka prowadzonego może być realizowane przez',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	pedał hamulca nożnego',
             correct: false
@@ -1770,7 +1776,7 @@ export default {
           }]
         }, {
           question: '108.W skład układu mechanizmu podnoszenia wchodzi',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	siłowniki układu podnoszenia',
             correct: false
@@ -1786,7 +1792,7 @@ export default {
           }]
         }, {
           question: '109.Wózki jezdniowe podnośnikowe czołowe z fotelem dla operatora mogą być wyposażone w maszt typu',
-          img: '',
+     image: require('@/assets/blank.png'),
           answers: [{
             text: '•	duplex',
             correct: false
@@ -1802,7 +1808,7 @@ export default {
           }]
         }, {
           question: '110.Jakie elementy bezpieczeństwa chronią operatora w przypadku utraty stateczności wózka podnośnikowego czołowego?',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	łącznik STOP',
             correct: false
@@ -1818,7 +1824,7 @@ export default {
           }]
         }, {
           question: '111.Jakie elementy maja wpływ na stateczność wózka podnośnikowego czołowego ?',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	kabina wózka, pas bezpieczeństwa',
             correct: false
@@ -1834,7 +1840,7 @@ export default {
           }]
         }, {
           question: '112.Do zasilania wózków podnośnikowych spalinowych stosowane są butle gazowe',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	z kołnierzem',
             correct: true
@@ -1850,7 +1856,7 @@ export default {
           }]
         }, {
           question: '113.W wózkach podnośnikowych łańcuch mechanizmu podnoszenia jest',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	cięgnem nośnym',
             correct: true
@@ -1866,7 +1872,7 @@ export default {
           }]
         }, {
           question: '114.Oznaczenie na poniższym rysunku przedstawia',
-          img: './assent/sprezyna.png',
+         image: require('@/assets/sprezyna.png'),
           answers: [{
             text: '•	lampkę kontrolna świec żarowych',
             correct: true
@@ -1882,7 +1888,7 @@ export default {
           }]
         }, {
           question: '115.Oznaczenie na poniższym rysunku przedstawia',
-          img: './assent/akumu.png',
+         image: require('@/assets/akumu.png'),
           answers: [{
             text: '•	lampkę sygnalizująca błędne podłączenie biegunów akumulatora (dotyczy tylko wózków akumulatorowych)',
             correct: false
@@ -1898,7 +1904,7 @@ export default {
           }]
         }, {
           question: '116.Oznaczenie na poniższym rysunku przedstawia',
-          img: './assent/ciecz.png',
+          image: require('@/assets/ciecz.png'),
           answers: [{
             text: '•	wskazania ogranicznika udźwigu wózka',
             correct: false
@@ -1914,7 +1920,7 @@ export default {
           }]
         }, {
           question: '117.Oznaczenie na poniższym rysunku przedstawia',
-          img: './assent/wykrzyknik.png',
+          image: require('@/assets/wykrzyknik.png'),
           answers: [{
             text: '•	lampkę kontrolna - włączenia hamulca postojowego',
             correct: true
@@ -1930,7 +1936,7 @@ export default {
           }]
         }, {
           question: '118.Zapalona lub migająca lampka kontrolna',
-          img: './assent/klucz.png',
+          image: require('@/assets/klucz.png'),
           answers: [{
             text: '•	oznacza przekroczenie okresu serwisowego lub awarie urządzenia',
             correct: true
@@ -1946,7 +1952,7 @@ export default {
           }]
         }, {
           question: '119.Pracując wózkiem z osprzętem wymiennym operator powinien',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	przestrzegać zapisów instrukcji eksploatacji wózka oraz instrukcji osprzętu wymiennego',
             correct: false
@@ -1962,7 +1968,7 @@ export default {
           }]
         }, {
           question: '120.Osprzęt wymienny może być zainstalowany do wózka przez',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	konserwatora wózków jezdniowych',
             correct: false
@@ -1978,7 +1984,7 @@ export default {
           }]
         }, {
           question: '121.Jaki wpływ na udźwig wózka ma zamontowany dodatkowy osprzęt wymienny',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zwiększa udźwig wózka',
             correct: false
@@ -1994,7 +2000,7 @@ export default {
           }]
         }, {
           question: '122.Po montażu osprzętu wymiennego przewidzianego przez wytwórcę wózka',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	urządzenie należy zgłosić do badania w UDT',
             correct: false
@@ -2010,7 +2016,7 @@ export default {
           }]
         }, {
           question: '123.Dźwignia oznaczona poniższym piktogramem, po wychyleniu przez operatora powoduje',
-          img: './assent/pd.png',
+        image: require('@/assets/pd.png'),
           answers: [{
             text: '•	uruchomienie mechanizmu podnoszenia',
             correct: false
@@ -2026,7 +2032,7 @@ export default {
           }]
         }, {
           question: '124.Praca wózkiem z zamontowanymi przedłużkami do wideł jest dozwolona w przypadku gdy',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	wytwórca nie zabronił takiej pracy',
             correct: false
@@ -2042,7 +2048,7 @@ export default {
           }]
         }, {
           question: '125.Zabezpieczenie elektryczne montowane na zakończeniu dyszla wózka jezdniowego prowadzonego to',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	łącznik STOP',
             correct: false
@@ -2058,7 +2064,7 @@ export default {
           }]
         }, {
           question: '126.Który z elementów wyposażenia zabezpiecza przed uruchomieniem urządzenia przez osoby niepowołane?',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	łącznik STOP',
             correct: false
@@ -2074,7 +2080,7 @@ export default {
           }]
         }, {
           question: '127.Cecha 1500 x 500 znajdująca się na widle nośnej oznacza',
-          img: '',
+      image: require('@/assets/blank.png'),
           answers: [{
             text: '•	maksymalny udźwig jednej widły wynoszący 1,5 t w odległości 500 mm od czoła widły',
             correct: true
@@ -2090,7 +2096,7 @@ export default {
           }]
         }, {
           question: '128.Maksymalny ładunek jaki można podnieść na parze wideł oznaczonych 2500 x 500 każda wynosi',
-          img: '',
+      image: require('@/assets/blank.png'),
           answers: [{
             text: '•	0,5 t',
             correct: false
@@ -2106,7 +2112,7 @@ export default {
           }]
         }, {
           question: '129.Praca wózkiem jezdniowym podnośnikowym ze zbyt niskim poziomem oleju w układzie hydraulicznym może objawiać się',
-          img: '',
+      image: require('@/assets/blank.png'),
           answers: [{
             text: '•	„skokowym", przerywanym ruchem siłownika do góry',
             correct: false
@@ -2122,7 +2128,7 @@ export default {
           }]
         }, {
           question: '130."Skokowy" ruch mechanizmu podnoszenia do góry może być spowodowany',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zbyt niskim poziomem oleju w układzie hydraulicznym',
             correct: true
@@ -2138,7 +2144,7 @@ export default {
           }]
         }, {
           question: '131.Nieszczelność w układzie hydraulicznym wózka jezdniowego podnośnikowego może się objawiać',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	wyciekiem zewnętrznym',
             correct: false
@@ -2154,7 +2160,7 @@ export default {
           }]
         }, {
           question: '132.Gęstość oleju hydraulicznego w temperaturze ujemnej',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	maleje',
             correct: false
@@ -2170,7 +2176,7 @@ export default {
           }]
         }, {
           question: '133.Stan poziomu oleju w układzie hydraulicznym operator sprawdza',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zawsze przed rozpoczęciem i po zakończeniu pracy',
             correct: true
@@ -2186,7 +2192,7 @@ export default {
           }]
         }, {
           question: '134.O ile wytwórca nie określi inaczej, maksymalne odchylenie od pionowego położenia masztu obciążonego ciężarem nominalnym, spowodowane wewnętrznym przeciekiem w układzie wychyłu nie powinno przekroczyć',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	5% w czasie 10 min',
             correct: false
@@ -2202,7 +2208,7 @@ export default {
           }]
         }, {
           question: '135.O ile wytwórca nie określi inaczej, składowa opadania mechanizmu podnoszenia wózka o udźwigu do 10 t obciążonego ciężarem nominalnym nie powinna przekroczyć',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	100 mm w ciągu pierwszych 10 min',
             correct: true
@@ -2218,7 +2224,7 @@ export default {
           }]
         }, {
           question: '136.O ile wytwórca nie określi inaczej, składowa opadania mechanizmu podnoszenia wózka o udźwigu powyżej 10 t obciążonego ciężarem nominalnym nie powinna przekroczyć',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	100 mm w ciągu pierwszych 10 min',
             correct: false
@@ -2234,7 +2240,7 @@ export default {
           }]
         }, {
           question: '137.Optymalne obciążenie potrzebne do przeprowadzenia próby szczelności wewnętrznej układu hydraulicznego wynosi',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	50% obciążenia nominalnego',
             correct: false
@@ -2250,7 +2256,7 @@ export default {
           }]
         }, {
           question: '138.O ile wytyczne producenta nie stanowią inaczej, minimalna wysokość na jaką należy podnieść ładunek podczas próby szczelności wewnętrznej układu wychyłu masztu wynosi',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	100 mm',
             correct: false
@@ -2266,7 +2272,7 @@ export default {
           }]
         }, {
           question: '139.Sprawdzenie w bezpieczny sposób działania zaworu przelewowego należy wykonać',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	z obciążeniem nominalnym',
             correct: false
@@ -2282,7 +2288,7 @@ export default {
           }]
         }, {
           question: '140.Sprawdzenie układu hydraulicznego w wózkach podnośnikowych obejmuje',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	próbę szczelności wewnętrznej',
             correct: false
@@ -2298,7 +2304,7 @@ export default {
           }]
         }, {
           question: '141.Sprawdzenie poprawności działania dźwigni sterowniczych należy wykonać',
-          img: '',
+       image: require('@/assets/blank.png'),
           answers: [{
             text: '•	sprawdzając zgodność realizowanych ruchów z oznaczeniami',
             correct: false
@@ -2314,7 +2320,7 @@ export default {
           }]
         }, {
           question: '142.Zakres przeprowadzonych prób wózków jezdniowych podnośnikowych wyposażonych w hydrauliczny osprzęt dodatkowy obejmuje',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	całe wyposażenia hydrauliczne wózka wraz z osprzętem dodatkowym',
             correct: true
@@ -2330,7 +2336,7 @@ export default {
           }]
         }, {
           question: '143.Akumulatory kwasowe można ładować',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	w każdym pomieszczeniu niezależnie od przeznaczenia',
             correct: false
@@ -2346,7 +2352,7 @@ export default {
           }]
         }, {
           question: '144.Pomieszczenie, w którym odbywa się ładowanie akumulatorów wózka',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	nie musi posiadać wentylacji, ale musi być ogrzewane',
             correct: false
@@ -2378,7 +2384,7 @@ export default {
           }]
         }, {
           question: '146.Osoba dokonująca wymiany rozładowanych akumulatorów powinna',
-          img: '',
+      image: require('@/assets/blank.png'),
           answers: [{
             text: '•	posiadać uprawnienia elektryczne SEP',
             correct: false
@@ -2394,7 +2400,7 @@ export default {
           }]
         }, {
           question: '147.Łącznik bezpieczeństwa "STOP" służy do',
-          img: '',
+       image: require('@/assets/blank.png'),
           answers: [{
             text: '•	awaryjnego zatrzymania pracy wózka',
             correct: true
@@ -2410,7 +2416,7 @@ export default {
           }]
         }, {
           question: '148.W przypadku stwierdzenia sytuacji niebezpiecznej operator wózka ma obowiązek',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zatrzymać wózek',
             correct: false
@@ -2426,7 +2432,7 @@ export default {
           }]
         }, {
           question: '149.Sprawdzenie poprawności działania łącznika bezpieczeństwa STOP należy wykonać',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	tylko podczas przeglądów konserwacyjnych',
             correct: false
@@ -2442,7 +2448,7 @@ export default {
           }]
         }, {
           question: '150Graniczne wartości zużycia ogumienia zawiera',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	deklaracja zgodności CE',
             correct: false
@@ -2458,7 +2464,7 @@ export default {
           }]
         }, {
           question: '151.Ciśnienie w oponach powinno być dostosowane do',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zaleceń instrukcji eksploatacji wózka',
             correct: true
@@ -2474,7 +2480,7 @@ export default {
           }]
         }, {
           question: '152.Nierówne ciśnienie w oponach na jednej osi może spowodować',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	poprawę właściwości jezdnych wózka',
             correct: false
@@ -2490,7 +2496,7 @@ export default {
           }]
         }, {
           question: '153.Wpływ na przyspieszone zużycie opon pneumatycznych ma',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	gwałtowne hamowanie, najeżdżanie na przeszkody z dużą prędkością',
             correct: false
@@ -2506,7 +2512,7 @@ export default {
           }]
         }, {
           question: '154.Nierównomierne zużycie opon pełnych znajdujących się na wspólnej osi',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	poprawia właściwości jezdne wózka',
             correct: false
@@ -2522,7 +2528,7 @@ export default {
           }]
         }, {
           question: '155.Ocenę stanu technicznego ogumienia przeprowadza',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	konserwator podczas przeglądów konserwacyjnych',
             correct: false
@@ -2538,7 +2544,7 @@ export default {
           }]
         }, {
           question: '156.W przypadku stwierdzenia uszkodzeń mechanicznych ogumienia, mających wpływ na bezpieczna eksploatację, operator wózka',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	powiadamia przełożonego o stwierdzonej niezgodności, ale nie przerywa pracy',
             correct: false
@@ -2554,7 +2560,7 @@ export default {
           }]
         }, {
           question: '157.Operator po zauważeniu podczas jazdy palącej się lampki kontrolnej ciśnienia oleju silnika powinien',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zjechać w bezpieczne miejsce, opuścić ładunek, wyłączyć silnik',
             correct: false
@@ -2570,7 +2576,7 @@ export default {
           }]
         }, {
           question: '158.Po zakończeniu pracy operator powinien',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	upewnić się, ze widły są opuszczone, wózek jest w miejscu stałego postoju i nie stwarza zagrożenia',
             correct: false
@@ -2586,7 +2592,7 @@ export default {
           }]
         }, {
           question: '159.Sprawne dźwignie sterujące',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	po zwolnieniu nacisku powinny samoczynnie wracać do pozycji neutralnych',
             correct: false
@@ -2602,7 +2608,7 @@ export default {
           }]
         }, {
           question: '160.Opis próby sprawdzenia poprawności działania hamulca zasadniczego opisuje',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	instrukcja obsługi wózka',
             correct: true
@@ -2618,7 +2624,7 @@ export default {
           }]
         }, {
           question: '161.Informacje dotyczące sposobu sprawdzania poprawności działania hamulca pomocniczego są zawarte w',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	rozporządzeniu w sprawie eksploatacji urządzeń transportu bliskiego',
             correct: false
@@ -2634,7 +2640,7 @@ export default {
           }]
         }, {
           question: '162.Podczas próby hamulca zasadniczego maszt powinien być w pozycji',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	pozycja masztu nie ma znaczenia',
             correct: false
@@ -2650,7 +2656,7 @@ export default {
           }]
         }, {
           question: '163.Próbę hamulca zasadniczego należy przeprowadzać',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	z ładunkiem 110% udźwigu urządzenia',
             correct: false
@@ -2666,7 +2672,7 @@ export default {
           }]
         }, {
           question: '164.Jeżeli w czasie próby hamulca pomocniczego operator uzna, ze jego działanie jest nieprawidłowe powinien',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	wstrzymać eksploatacje urządzenia',
             correct: false
@@ -2682,7 +2688,7 @@ export default {
           }]
         }, {
           question: '165.W przypadku stwierdzenia awarii układu hamulcowego operator powinien',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	w ramach posiadanych kompetencji wykonać naprawę hamulca',
             correct: false
@@ -2698,7 +2704,7 @@ export default {
           }]
         }, {
           question: '166.W przypadku stwierdzenia wycieku płynu hamulcowego, operator powinien',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	uzupełnić płyn hamulcowy i kontynuować jazdę do zakończenia pracy',
             correct: false
@@ -2714,7 +2720,7 @@ export default {
           }]
         }, {
           question: '167.W przypadku stwierdzenia niewłaściwego działania hamulca pomocniczego, operator',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	na wyraźne polecenie przełożonego dokonuje jego naprawy',
             correct: false
@@ -2730,7 +2736,7 @@ export default {
           }]
         }, {
           question: '168.Hamulec zasadniczy należy sprawdzać jadąc wózkiem podnośnikowym i hamując',
-          img: '',
+        image: require('@/assets/blank.png'),
           answers: [{
             text: '•	do przodu',
             correct: false
@@ -2746,7 +2752,7 @@ export default {
           }]
         }, {
           question: '169.Operator powinien przeprowadzić sprawdzenie hamulców',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zgodnie z terminami zawartymi w instrukcji konserwacji',
             correct: false
@@ -2762,7 +2768,7 @@ export default {
           }]
         }, {
           question: '170.Schodząc z fotela operatora, Obsługujący wózek powinien',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zawsze załączyć hamulec postojowy',
             correct: true
@@ -2778,7 +2784,7 @@ export default {
           }]
         }, {
           question: '171.Zakres czynności kontrolnych masztu wózka podnośnikowego obejmuje',
-          img: '',
+       image: require('@/assets/blank.png'),
           answers: [{
             text: '•	sprawdzenie czy nie wystąpiły pęknięcia',
             correct: false
@@ -2794,7 +2800,7 @@ export default {
           }]
         }, {
           question: '172.Podczas jazdy wózkiem podnośnikowym z ładunkiem na widłach należy',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	manipulować pochyłem masztu w zależności od ukształtowania terenu',
             correct: false
@@ -2810,7 +2816,7 @@ export default {
           }]
         }, {
           question: '173.Ładunek należy transportować',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	na wysokości powyżej linii wzroku operatora, jeżeli poprawia to widoczność',
             correct: false
@@ -2826,7 +2832,7 @@ export default {
           }]
         }, {
           question: '174.Podczas zjazdu z pochyłej rampy wózkiem czołowym podnośnikowym wraz z ładunkiem, operator',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	porusza się przodem',
             correct: false
@@ -2842,7 +2848,7 @@ export default {
           }]
         }, {
           question: '175.Podczas wjazdu na pochyła rampę wózkiem jezdniowym podnośnikowym z ładunkiem ograniczającym widoczność, operator',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	korzysta z pomocy drugiej osoby',
             correct: false
@@ -2858,7 +2864,7 @@ export default {
           }]
         }, {
           question: '176.Poruszanie się wózkiem w poprzek pochyłej rampy jest',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zabronione',
             correct: true
@@ -2874,7 +2880,7 @@ export default {
           }]
         }, {
           question: '177.Poruszając się wózkiem z ładunkiem ograniczającym widoczność operator powinien',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	jechać tyłem',
             correct: false
@@ -2890,7 +2896,7 @@ export default {
           }]
         }, {
           question: '178.Podczas jazdy wózkiem jezdniowym podnośnikowym z ładunkiem należy',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	unikać gwałtownych skrętów',
             correct: false
@@ -2906,7 +2912,7 @@ export default {
           }]
         }, {
           question: '179.Wylot zaworu butli gazowej powinien być skierowany',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	w dół',
             correct: true
@@ -2922,7 +2928,7 @@ export default {
           }]
         }, {
           question: '180.Szczelność instalacji gazowej sprawdza się przy pomocy',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	detektora gazu',
             correct: false
@@ -2938,7 +2944,7 @@ export default {
           }]
         }, {
           question: '181.Eksploatacja wózka jezdniowego w temperaturze poniżej -10?C',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	jest dozwolona pod warunkiem wyposażenia wózka w ogrzewanie kabiny operatora',
             correct: false
@@ -2955,7 +2961,7 @@ export default {
         },
         {
           question: '182.Eksploatacja wózka jezdniowego w temperaturze powyżej 30?Cp',
-          img: '',
+         image: require('@/assets/blank.png'),
           answers: [{
             text: '•	jest zabroniona z uwagi na pogorszenie warunków pracy operatora',
             correct: false
@@ -2971,7 +2977,7 @@ export default {
           }]
         }, {
           question: '183.W oparciu o tabele określ jakie maksymalne obciążenie może przenieść gniazdo ładunkowe regału',
-          img: './assent/diagram1.png',
+        image: require('@/assets/diagram1.png'),
           answers: [{
             text: '•	1320 kg',
             correct: false
@@ -2987,7 +2993,7 @@ export default {
           }]
         }, {
           question: '184.W oparciu o tabele, określ na które najwyższe gniazdo ładunkowe podasz towar dysponując wózkiem o maksymalnej wysokości podnoszenia 2100 mm',
-          img: './assent/diagram1.png',
+          image: require('@/assets/diagram1.png'),
           answers: [{
             text: '•	gniazdo 1',
             correct: false
@@ -3003,7 +3009,7 @@ export default {
           }]
         }, {
           question: '185.Odstawiając ładunek na regał magazynowy operator powinien znać',
-          img: '',
+           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	masę towaru i obciążenie maksymalne gniazda regału',
             correct: false
@@ -3019,7 +3025,7 @@ export default {
           }]
         }, {
           question: '186.Podczas transportu ładunków wielkogabarytowych operator powinien',
-          img: '',
+           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	jechać tyłem',
             correct: false
@@ -3036,7 +3042,7 @@ export default {
         },
         {
           question: '187.Na co powinien zwrócić uwagę operator podczas wymiany baterii trakcyjnych?',
-          img: '',
+           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	na masę i wymiary baterii',
             correct: false
@@ -3052,7 +3058,7 @@ export default {
           }]
         }, {
           question: '188.Przyczyna utraty stateczności wózka może być',
-          img: '',
+           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zbyt niskie ciśnienie w oponach',
             correct: false
@@ -3068,7 +3074,7 @@ export default {
           }]
         }, {
           question: '189.Dopuszczalna prędkość jazdy wózka jest określona',
-          img: '',
+           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	w ustawie o dozorze technicznym',
             correct: false
@@ -3084,7 +3090,7 @@ export default {
           }]
         }, {
           question: '190.Przed rozpoczęciem pracy wózkiem należy sprawdzić funkcjonowanie',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	układu hydraulicznego',
             correct: false
@@ -3100,7 +3106,7 @@ export default {
           }]
         }, {
           question: '191.Po zamontowaniu dodatkowego osprzętu wymiennego należy',
-          img: '',
+           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zapoznać się z właściwym diagramem udźwigu',
             correct: true
@@ -3116,7 +3122,7 @@ export default {
           }]
         }, {
           question: '192.Przed wjazdem wózkiem na rampę załadowcza operator powinien sprawdzić',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	kat nachylenia rampy, oraz zdolność wózka do pokonywania wzniesień',
             correct: false
@@ -3132,7 +3138,7 @@ export default {
           }]
         }, {
           question: '193.Podczas jazdy wózkiem podnośnikowym należy',
-          img: '',
+           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	przestrzegać przepisów BHP',
             correct: false
@@ -3148,7 +3154,7 @@ export default {
           }]
         }, {
           question: '194.Gdzie znajduje się informacja dotycząca udźwigu wózka',
-          img: '',
+           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	w instrukcji eksploatacji wózka',
             correct: false
@@ -3164,7 +3170,7 @@ export default {
           }]
         }, {
           question: '195.Przed rozpoczęciem pracy wózkiem należy',
-          img: '',
+           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zapoznać się z zakresem pracy',
             correct: false
@@ -3180,7 +3186,7 @@ export default {
           }]
         }, {
           question: '196.Praca wózka z koszem do podnoszenia osób zakładanym na widły',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	jest dozwolona wyłącznie po uzgodnieniu szczegółowych warunków eksploatacji z UDT',
             correct: true
@@ -3196,7 +3202,7 @@ export default {
           }]
         }, {
           question: '197.W przypadku kiedy wózek traci stateczność, operator',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	stara się opuścić kabinę wózka (przed jego wywróceniem się)',
             correct: false
@@ -3212,7 +3218,7 @@ export default {
           }]
         }, {
           question: '198.W chwili wywracania się wózka należy',
-          img: '',
+           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	niezwłocznie wyskoczyć z kabiny',
             correct: false
@@ -3228,7 +3234,7 @@ export default {
           }]
         }, {
           question: '199.Wózek może stracić stateczność na skutek',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	podnoszenia ładunku o ciężarze większym niż udźwig wózka',
             correct: false
@@ -3244,7 +3250,7 @@ export default {
           }]
         }, {
           question: '200.Jeżeli instrukcja wózka nie stanowi inaczej, następujące w toku eksploatacji maksymalne wydłużenie łańcucha nośnego może wynosić',
-          img: '',
+           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	3 cm',
             correct: false
@@ -3261,7 +3267,7 @@ export default {
         },
         {
           question: '201.Jeżeli instrukcja wózka nie stanowi inaczej, dopuszczalna ilość pękniętych płytek łańcucha nośnego (konstrukcji Flyera) wynosi',
-          img: '',
+           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	3% całkowitej ilości płytek',
             correct: false
@@ -3277,7 +3283,7 @@ export default {
           }]
         }, {
           question: '202.Jeżeli instrukcja wózka nie stanowi inaczej, minimalna dopuszczalna grubość poziomej części wideł zmierzona w pobliżu ich naroża (piety) wynosi',
-          img: '',
+           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	25 mm przy grubości nominalnej 30 mm',
             correct: false
@@ -3293,7 +3299,7 @@ export default {
           }]
         }, {
           question: '203.Jeżeli instrukcja wózka nie stanowi inaczej, minimalna dopuszczalna grubość poziomej części wideł zmierzona w pobliżu ich naroża (piety) wynosi',
-          img: '',
+          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	27 mm przy grubości nominalnej 30 mm',
             correct: true
@@ -3309,7 +3315,7 @@ export default {
           }]
         }, {
           question: '204.Jeżeli instrukcja wózka nie stanowi inaczej, minimalna dopuszczalna grubość poziomej części wideł zmierzona w pobliżu ich naroża (piety) wynosi',
-          img: '',
+           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	25 mm przy grubości nominalnej 30 mm',
             correct: false
@@ -3325,7 +3331,7 @@ export default {
           }]
         }, {
           question: '205.Jeżeli instrukcja wózka nie stanowi inaczej, minimalna dopuszczalna grubość poziomej części wideł zmierzona w pobliżu ich naroża (piety) wynosi',
-          img: '',
+           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	25 mm przy grubości nominalnej 30 mm',
             correct: false
@@ -3341,7 +3347,7 @@ export default {
           }]
         }, {
           question: '206.Jeżeli instrukcja wózka nie stanowi inaczej, maksymalne dopuszczalne rozgięcie widły względem wartości oryginalnej (zwykle 90 stopni), wynosi',
-          img: '',
+       image: require('@/assets/blank.png'),
           answers: [{
             text: '•	1 cm',
             correct: false
@@ -3358,7 +3364,7 @@ export default {
         },
         {
           question: '207.W oparciu o przedstawiony diagram udźwigu i rysunek określ maksymalna bezpieczna wysokość podnoszenia ładunku pobranego od strony A',
-          img: './assent/diagram2.png',
+        image: require('@/assets/diagram2.png'),
           answers: [{
             text: '•	4836 mm',
             correct: true
@@ -3374,7 +3380,7 @@ export default {
           }]
         }, {
           question: '208.W oparciu o przedstawiony diagram udźwigu i rysunek określ maksymalna bezpieczna wysokość podnoszenia ładunku pobranego od strony B',
-          img: './assent/diagram2.png ',
+         image: require('@/assets/diagram2.png'),
           answers: [{
             text: '•	3100 mm',
             correct: false
@@ -3390,7 +3396,7 @@ export default {
           }]
         }, {
           question: '209.W oparciu o przedstawiony diagram udźwigu i rysunek określ maksymalna bezpieczna wysokość podnoszenia ładunku pobranego od strony A',
-          img: './assent/diagram3.png',
+          image: require('@/assets/diagram3.png'),
           answers: [{
             text: '•	3510 mm',
             correct: true
@@ -3406,7 +3412,7 @@ export default {
           }]
         }, {
           question: '210.W oparciu o przedstawiony diagram udźwigu i rysunek określ maksymalna bezpieczna wysokość podnoszenia ładunku pobranego od strony B',
-          img: './assent/diagram3.png',
+           image: require('@/assets/diagram3.png'),
           answers: [{
             text: '•	4212 mm',
             correct: false
@@ -3423,7 +3429,7 @@ export default {
         },
         {
           question: '211.W oparciu o przedstawiony diagram udźwigu i rysunek określ maksymalna bezpieczna wysokość podnoszenia ładunku pobranego od strony A',
-          img: './assent/diagram4.png',
+           image: require('@/assets/diagram4.png'),
           answers: [{
             text: '•	2600 mm',
             correct: false
@@ -3439,7 +3445,7 @@ export default {
           }]
         }, {
           question: '212.W oparciu o przedstawiony diagram udźwigu i rysunek określ maksymalna bezpieczna wysokość podnoszenia ładunku pobranego od strony B',
-          img: './assent/diagram4.png',
+         image: require('@/assets/diagram4.png'),
           answers: [{
             text: '•	4056 mm',
             correct: false
@@ -3456,7 +3462,7 @@ export default {
         },
         {
           question: '213.W oparciu o przedstawiony diagram udźwigu i rysunek określ maksymalna bezpieczna wysokość podnoszenia ładunku pobranego od strony A',
-          img: './assent/diagram5.png',
+          image: require('@/assets/diagram5.png'),
           answers: [{
             text: '•	3640 mm',
             correct: false
@@ -3472,7 +3478,7 @@ export default {
           }]
         }, {
           question: '214.W oparciu o przedstawiony diagram udźwigu i rysunek określ maksymalna bezpieczna wysokość podnoszenia ładunku pobranego od strony B',
-          img: './assent/diagram5.png',
+          image: require('@/assets/diagram5.png'),
           answers: [{
             text: '•	2800 mm',
             correct: false
@@ -3489,7 +3495,7 @@ export default {
         },
         {
           question: '215.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalna bezpieczna wysokość podnoszenia ładunku pobranego z kierunku A',
-          img: './assent/diagram6.png',
+          image: require('@/assets/diagram6.png'),
           answers: [{
             text: '•	2350 mm',
             correct: false
@@ -3505,7 +3511,7 @@ export default {
           }]
         }, {
           question: '216.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalna bezpieczna wysokość podnoszenia, ładunku pobranego z kierunku A',
-          img: './assent/diagram7.png',
+          image: require('@/assets/diagram7.png'),
           answers: [{
             text: '•	700 mm',
             correct: false
@@ -3522,7 +3528,7 @@ export default {
         },
         {
           question: '217.W oparciu o przedstawiony diagram udźwigu oraz rysunek wskaż, na który regał lub regały można postawić ładunek',
-          img: './assent/diagram8.png',
+          image: require('@/assets/diagram8.png'),
           answers: [{
             text: '•	Regał 1',
             correct: false
@@ -3538,7 +3544,7 @@ export default {
           }]
         }, {
           question: '218.W oparciu o przedstawiony diagram udźwigu oraz rysunek wskaż, na który regał lub regały można postawić ładunek',
-          img: './assent/diagram9.png',
+          image: require('@/assets/diagram9.png'),
           answers: [{
             text: '•	Regał 1',
             correct: true
@@ -3555,7 +3561,7 @@ export default {
         },
         {
           question: '219.W oparciu o przedstawiony diagram udźwigu oraz rysunek wskaż, na ktory regał lub regały można postawić ładunek',
-          img: './assent/diagram10.png',
+         image: require('@/assets/diagram10.png'),
           answers: [{
             text: '•	Regał 1',
             correct: false
@@ -3571,7 +3577,7 @@ export default {
           }]
         }, {
           question: '220.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalna bezpieczna wysokość podnoszenia, ładunku pobranego z kierunku A',
-          img: './assent/diagram11.png',
+          image: require('@/assets/diagram11.png'),
           answers: [{
             text: '•	5940 mm',
             correct: true
@@ -3588,7 +3594,7 @@ export default {
         },
         {
           question: '221.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną bezpieczną wysokość podnoszenia, ładunku pobranego z kierunku B',
-          img: './assent/diagram12.png',
+          image: require('@/assets/diagram12.png'),
           answers: [{
             text: '•	5940 mm',
             correct: false
@@ -3604,7 +3610,7 @@ export default {
           }]
         }, {
           question: '222.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną bezpieczną wysokość podnoszenia, ładunku pobranego z kierunku A',
-          img: './assent/diagram13.png',
+         image: require('@/assets/diagram13.png'),
           answers: [{
             text: '•	4860 mm',
             correct: false
@@ -3621,7 +3627,7 @@ export default {
         },
         {
           question: '223.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną bezpieczną wysokość podnoszenia, ładunku pobranego z kierunku B',
-          img: './assent/diagram14.png',
+          image: require('@/assets/diagram14.png'),
           answers: [{
             text: '•	4860 mm',
             correct: false
@@ -3637,7 +3643,7 @@ export default {
           }]
         }, {
           question: '224.W oparciu o przedstawiony diagram udźwigu określ maksymalny udźwig wózka na wysokości 6 m',
-          img: './assent/diagram15.png',
+          image: require('@/assets/diagram14.png'),
           answers: [{
             text: '•	1300 kg',
             correct: false
@@ -3654,7 +3660,7 @@ export default {
         },
         {
           question: '225.W oparciu o przedstawiony diagram udźwigu określ maksymalny udźwig wózka na wysokości 6,7 m',
-          img: './assent/diagram15.png',
+          image: require('@/assets/diagram15.png'),
           answers: [{
             text: '•	1400 kg',
             correct: false
@@ -3670,7 +3676,7 @@ export default {
           }]
         }, {
           question: '226.W oparciu o przedstawiony diagram udźwigu określ maksymalną masę ładunku, o wymiarach podstawy 1,6 m x 1,6 m',
-          img: './assent/diagram16.png',
+          image: require('@/assets/diagram16.png'),
           answers: [{
             text: '•	4,5 t',
             correct: false
@@ -3687,7 +3693,7 @@ export default {
         },
         {
           question: '227.W oparciu o przedstawiony diagram udźwigu określ maksymalną masę ładunku, o wymiarach podstawy 2 m x 2 m',
-          img: './assent/diagram16.png',
+           image: require('@/assets/diagram16.png'),
           answers: [{
             text: '•	2,5 t',
             correct: false
@@ -3703,7 +3709,7 @@ export default {
           }]
         }, {
           question: '228.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną masę ładunku pobranego od strony B',
-          img: './assent/diagram17.png',
+           image: require('@/assets/diagram17.png') ,
           answers: [{
             text: '•	1300 kg',
             correct: false
@@ -3720,7 +3726,7 @@ export default {
         },
         {
           question: '229.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną masę ładunku pobranego od strony A',
-          img: './assent/diagram17.png',
+           image: require('@/assets/diagram17.png'),
           answers: [{
             text: '•	1500 kg',
             correct: false
@@ -3736,7 +3742,7 @@ export default {
           }]
         }, {
           question: '230.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną masę ładunku pobranego od strony B',
-          img: './assent/diagram18.png',
+           image: require('@/assets/diagram18.png'),
           answers: [{
             text: '•	1100 kg',
             correct: false
@@ -3753,7 +3759,7 @@ export default {
         },
         {
           question: '231.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalna masę ładunku, jaką można bezpiecznie podnieść pobierając ładunek od strony A :',
-          img: './assent/diagram18.png',
+          image: require('@/assets/diagram18.png'),
           answers: [{
             text: '•	1500 kg',
             correct: false
@@ -3770,7 +3776,7 @@ export default {
         },
         {
           question: '232.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalna masę ładunku, jaką można bezpiecznie podnieść pobierając ładunek od strony A',
-          img: './assent/diagram19.png',
+          image: require('@/assets/diagram19.png'),
           answers: [{
             text: '•	2695 kg',
             correct: false
@@ -3786,7 +3792,7 @@ export default {
           }]
         }, {
           question: '233.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalna masę ładunku, jaką można bezpiecznie podnieść pobierając ładunek od strony B',
-          img: './assent/diagram19.png',
+          image: require('@/assets/diagram19.png'),
           answers: [{
             text: '•	2695 kg',
             correct: false
@@ -3802,7 +3808,7 @@ export default {
           }]
         }, {
           question: '234.W oparciu o przedstawiony diagram udźwigu określ maksymalny udźwig wózka, podnoszącego ładunek na wysokość 3000 mm',
-          img: './assent/diagram20.png',
+         image: require('@/assets/diagram20.png'),
           answers: [{
             text: '•	2400 kg',
             correct: false
@@ -3818,7 +3824,7 @@ export default {
           }]
         }, {
           question: '235.W oparciu o przedstawiony diagram udźwigu określ maksymalny udźwig wózka, podnoszącego ładunek na wysokość 4000 mm',
-          img: './assent/diagram20.png',
+          image: require('@/assets/diagram20.png'),
           answers: [{
             text: '•	3300 kg',
             correct: false
@@ -3834,7 +3840,7 @@ export default {
           }]
         }, {
           question: '236.W oparciu o przedstawiony diagram udźwigu określ maksymalny udźwig wózka, podnoszącego ładunek na wysokość 5000 mm',
-          img: './assent/diagram20.png',
+          image: require('@/assets/diagram20.png'),
           answers: [{
             text: '•	4000 kg',
             correct: false
@@ -3850,7 +3856,7 @@ export default {
           }]
         }, {
           question: '237.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalna masę ładunku jaką można bezpiecznie podnieść na wysokość 4000 mm, pobierając od strony B',
-          img: './assent/diagram21.png',
+           image: require('@/assets/diagram21.png'),
           answers: [{
             text: '•	3400 kg',
             correct: false
@@ -3866,7 +3872,7 @@ export default {
           }]
         }, {
           question: '238.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalna masę ładunku jaką można bezpiecznie podnieść na wysokość 4000 mm, pobierając od strony A',
-          img: './assent/diagram21.png',
+         image: require('@/assets/diagram21.png'),
           answers: [{
             text: '•	2900 kg',
             correct: false
@@ -3882,7 +3888,7 @@ export default {
           }]
         }, {
           question: '239.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalna masę ładunku, pobranego od strony B',
-          img: './assent/diagram22.png',
+          image: require('@/assets/diagram22.png'),
           answers: [{
             text: '•	1000 kg',
             correct: false
@@ -3898,7 +3904,7 @@ export default {
           }]
         }, {
           question: '240.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalna masę ładunku, pobranego od strony A',
-          img: './assent/diagram22.png',
+          image: require('@/assets/diagram22.png'),
           answers: [{
             text: '•	1600 kg',
             correct: false
@@ -3914,7 +3920,7 @@ export default {
           }]
         }, {
           question: '241.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalna masę ładunku, pobranego od strony A',
-          img: './assent/diagram23.png',
+          image: require('@/assets/diagram23.png'),
           answers: [{
             text: '•	400 kg',
             correct: false
@@ -3930,7 +3936,7 @@ export default {
           }]
         }, {
           question: '242.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalna masę ładunku, pobranego od strony B',
-          img: './assent/diagram23.png',
+          image: require('@/assets/diagram23.png'),
           answers: [{
             text: '•	400 kg',
             correct: false
@@ -3946,7 +3952,7 @@ export default {
           }]
         }, {
           question: '243.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalna masę ładunku, pobranego od strony A',
-          img: './assent/diagram24.png',
+          image: require('@/assets/diagram24.png'),
           answers: [{
             text: '•	1400 kg',
             correct: true
@@ -3962,7 +3968,7 @@ export default {
           }]
         }, {
           question: '244.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalna masę ładunku, pobranego od strony B',
-          img: './assent/diagram24.png',
+        image: require('@/assets/diagram24.png'),
           answers: [{
             text: '•	1400 kg',
             correct: false
@@ -3978,7 +3984,7 @@ export default {
           }]
         }, {
           question: '245.Świecąca się kontrolka ciśnienia oleju może świadczy o',
-          img: './assent/diagram25.png',
+        image: require('@/assets/diagram25.png'),
           answers: [{
             text: '•	zbyt niskim poziomie płyny w układzie hamulcowym',
             correct: false
@@ -3999,6 +4005,7 @@ export default {
     select: false,
     score: 0,
     inscore:0,
+    // props: ['source'],
     }
   },
   methods: {
@@ -4034,7 +4041,13 @@ export default {
     },
     restartQuiz(){
         Object.assign(this.$data, this.$options.data())
-    }
+    },
+  //   function() {
+  //   if (this.source) { //is it empty
+  //     this.img = this.source //replace placeholder
+  //   }
+  //  this.loading = true
+  // },
   }
 }
 </script>
