@@ -2368,7 +2368,7 @@ export default {
           }]
         }, {
           question: '145.Obowiązkiem operatora wózków jezdniowych podnośnikowych jest',
-          img: '',
+           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	sprawdzenie stopnia naładowania akumulatora',
             correct: false
