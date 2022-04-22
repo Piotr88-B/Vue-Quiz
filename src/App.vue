@@ -413,7 +413,7 @@ export default {
           question: '23.Dzienni konserwacji urządzenia technicznego prowadzi',
          image: require('@/assets/blank.png'),
           answers: [{
-            text: '23.Dzienni konserwacji urządzenia technicznego prowadzi',
+            text: '•	inspektor UDT w księdze rewizyjnej urządzenia',
             correct: false
           }, {
             text: '•	uprawniony operator',
@@ -452,7 +452,7 @@ export default {
             text: '•	pełnym',
             correct: true
           }, {
-            text: '•	pełnym',
+            text: '•	•	uproszczonym',
             correct: false
           }, {
             text: '•	wszystkie odpowiedzi są poprawne',
@@ -523,7 +523,7 @@ export default {
             correct: true
           }]
         }, {
-          question: '30.Terminy badan obrusowych i doraźnych kontrolnych UTB określone są',
+          question: '30.Terminy badan okresowych i doraźnych kontrolnych UTB określone są',
           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	w ustawie o dozorze technicznym',
@@ -1068,7 +1068,7 @@ export default {
             correct: false
           }]
         }, {
-          question: 'jest dopuszczalne jednorazowo na pisemne polecenie przełożonego',
+          question: '64.Podnoszenie ładunków za pomocą dwóch lub więcej UTB',
           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	jest dopuszczalne, pod warunkiem opracowania przez eksploatującego szczegółowych warunków eksploatacji, opisujących czynności organizacyjno-techniczne minimalizujące ryzyko',
@@ -1377,10 +1377,10 @@ export default {
           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	pompa tłoczkowa',
-            correct: false
+            correct: true
           }, {
             text: '•	silnik hydrauliczny',
-            correct: true
+            correct: false
           }, {
             text: '•	kompresor',
             correct: false
@@ -1784,7 +1784,7 @@ export default {
             text: '•	łańcuchy nośne',
             correct: false
           }, {
-            text: '•	łańcuchy nośne',
+            text: '•	karetka',
             correct: false
           }, {
             text: '•	wszystkie odpowiedzi są prawidłowe',
@@ -1979,7 +1979,7 @@ export default {
             text: '•	producenta osprzętu wymiennego',
             correct: false
           }, {
-            text: '•	producenta osprzętu wymiennego',
+            text: '•	wszystkie odpowiedzi są prawidłowe',
             correct: true
           }]
         }, {
@@ -3002,10 +3002,10 @@ export default {
             correct: false
           }, {
             text: '•	gniazdo 3',
-            correct: false
+            correct: true
           }, {
             text: '•	gniazdo 4',
-            correct: true
+            correct: false
           }]
         }, {
           question: '185.Odstawiając ładunek na regał magazynowy operator powinien znać',
@@ -4042,12 +4042,6 @@ export default {
     restartQuiz(){
         Object.assign(this.$data, this.$options.data())
     },
-  //   function() {
-  //   if (this.source) { //is it empty
-  //     this.img = this.source //replace placeholder
-  //   }
-  //  this.loading = true
-  // },
   }
 }
 </script>
