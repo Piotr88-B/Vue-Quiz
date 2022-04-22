@@ -41,6 +41,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'App',
   data() {
@@ -388,7 +389,7 @@ export default {
             text: '•	Państwowa Inspekcja Pracy',
             correct: false
           }, {
-            text: '•	Państwowa Inspekcja Pracy',
+            text: '•	inspektor UDT',
             correct: false
           }]
         },
@@ -410,7 +411,7 @@ export default {
           }]
         },
         {
-          question: '23.Dzienni konserwacji urządzenia technicznego prowadzi',
+          question: '23.Dziennik konserwacji urządzenia technicznego prowadzi',
          image: require('@/assets/blank.png'),
           answers: [{
             text: '•	inspektor UDT w księdze rewizyjnej urządzenia',
@@ -4011,22 +4012,24 @@ export default {
   methods: {
     selectResponse(e) {
       this.select = true;
-
       if(e.correct){
         this.score++;
+        
       }else{
         this.inscore++;
       }
+    
     },
     chack(status) {
       if (status.correct) {
         return 'correct'
+      
       } else {
         return 'false'
       }
     },
     nextQuestion(){
-       if(this.a <= (this.questions.length -2)){
+       if(this.a <= (this.questions.length-2)  ){
       this.a++
       this.b++
       this.select = false
