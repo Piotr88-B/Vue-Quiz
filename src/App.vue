@@ -16,7 +16,7 @@
       <div class="box__question">
         <h3>{{element.question}}</h3>
    
-           <img :src="`${element.image}`"  />
+           <img class="class__img" :src="`${element.image}`"  />
         
     
       </div>
@@ -452,7 +452,7 @@ export default {
             text: '•	pełnym',
             correct: true
           }, {
-            text: '•	•	uproszczonym',
+            text: '• uproszczonym',
             correct: false
           }, {
             text: '•	wszystkie odpowiedzi są poprawne',
