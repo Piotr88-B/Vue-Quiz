@@ -308,7 +308,7 @@ export default {
             text: '•	wózki jezdniowe podnośnikowe oraz podesty ruchome',
             correct: false
           }, {
-            text: '•	wózki jezdniowe podnośnikowe oraz podesty ruchome',
+            text: '•	zawiesia transportowe',
             correct: true
           }]
         }, {
@@ -3644,7 +3644,7 @@ export default {
           }]
         }, {
           question: '224.W oparciu o przedstawiony diagram udźwigu określ maksymalny udźwig wózka na wysokości 6 m',
-          image: require('@/assets/diagram14.png'),
+          image: require('@/assets/diagram15.png'),
           answers: [{
             text: '•	1300 kg',
             correct: false
