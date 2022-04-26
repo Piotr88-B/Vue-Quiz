@@ -92,6 +92,9 @@ li>div{
 li:hover{
   background-color: burlywood;
 }
+.disable{
+  pointer-events: none;
+}
 .box__buttom{
   display: flex;
   flex-wrap: wrap;

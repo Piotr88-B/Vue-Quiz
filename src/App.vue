@@ -22,7 +22,7 @@
       </div>
       <div class="box__sugestion">
         <ul>
-          <li v-for="(item, index) in element.answers" :key="index" :class="select ? chack(item) :'' "  @click="selectResponse(item) ">{{item.text}}<div class="fas fa-check" v-if="select ? item.correct: ''"></div><div class="fas fa-times" v-if="select ? !item.correct: ''"></div></li>
+          <li :disabled="isActive > 1"  v-for="(item, index) in element.answers" :key="index" :class="select ? chack(item) :'' " @click="selectResponse(item)"  >{{item.text}}<div class="fas fa-check" v-if="select ? item.correct: ''"></div><div class="fas fa-times" v-if="select ? !item.correct: ''"></div></li>
         </ul>
       </div>
     </div>
@@ -48,6 +48,8 @@ export default {
   name: 'App',
   data() {
     return {
+      isActive: true,
+      cnt: 1,
       questions: [{
           question: '1. Urządzenie techniczne objęte dozorem technicznym może być eksploatowane na podstawie',
           image: require('@/assets/blank.png'),
@@ -4009,23 +4011,36 @@ export default {
     score: 0,
     inscore:0,
     // props: ['source'],
+
     }
   },
   methods: {
+    
     selectResponse(e) {
       this.select = true;
-      if(e.correct){
-        
-           
-       this.score++
-        
-         
-      
+      if(e.correct ){     
+   this.addPoint()
       }else{
-        this.inscore++;
+       this.inPoint()
+        
       }
-    
     },
+
+   addPoint() {
+     if(this.b >= (this.inscore + this.score)+1){
+       this.score++
+       return
+     }
+   },
+
+    inPoint(){
+       if(this.b >= (this.inscore + this.score)+1){
+       this.inscore++
+       return
+     }
+    },
+
+
     chack(status) {
       if (status.correct) {
         return 'correct'
