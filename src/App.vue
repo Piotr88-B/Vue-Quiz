@@ -22,7 +22,7 @@
       </div>
       <div class="box__sugestion">
         <ul>
-          <li v-for="(item, index) in element.answers" :key="index" :class="select ? chack(item) :'' " @click="selectResponse(item)">{{item.text}}<div class="fas fa-check" v-if="select ? item.correct: ''"></div><div class="fas fa-times" v-if="select ? !item.correct: ''"></div></li>
+          <li v-for="(item, index) in element.answers" :key="index" :class="select ? chack(item) :'' "  @click="selectResponse(item) ">{{item.text}}<div class="fas fa-check" v-if="select ? item.correct: ''"></div><div class="fas fa-times" v-if="select ? !item.correct: ''"></div></li>
         </ul>
       </div>
     </div>
@@ -41,6 +41,8 @@
 </template>
 
 <script>
+
+
 
 export default {
   name: 'App',
@@ -2564,7 +2566,7 @@ export default {
           image: require('@/assets/blank.png'),
           answers: [{
             text: '•	zjechać w bezpieczne miejsce, opuścić ładunek, wyłączyć silnik',
-            correct: false
+            correct: true
           }, {
             text: '•	może kontynuować jazdę jeśli stan oleju jest prawidłowy',
             correct: false
@@ -2573,7 +2575,7 @@ export default {
             correct: false
           }, {
             text: '•	odpowiedz b i c jest prawidłowa',
-            correct: true
+            correct: false
           }]
         }, {
           question: '158.Po zakończeniu pracy operator powinien',
@@ -3568,13 +3570,13 @@ export default {
             correct: false
           }, {
             text: '•	Regał 2',
-            correct: true
+            correct: false
           }, {
             text: '•	Regał 3',
             correct: false
           }, {
             text: '•	odpowiedz a i b jest prawidłowa',
-            correct: false
+            correct: true
           }]
         }, {
           question: '220.W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalna bezpieczna wysokość podnoszenia, ładunku pobranego z kierunku A',
@@ -4013,8 +4015,12 @@ export default {
     selectResponse(e) {
       this.select = true;
       if(e.correct){
-        this.score++;
         
+           
+       this.score++
+        
+         
+      
       }else{
         this.inscore++;
       }
@@ -4023,7 +4029,6 @@ export default {
     chack(status) {
       if (status.correct) {
         return 'correct'
-      
       } else {
         return 'false'
       }
