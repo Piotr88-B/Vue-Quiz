@@ -4057,11 +4057,14 @@ export default {
        }
     },
     skipFast(){
-      if(this.a <= (this.questions.length -10) ){
+      if(this.a <= (this.questions.length -10) && this.select == true  ){
       this.a = this.a +20
       this.b = this.b +20
       this.inscore = this.inscore +20
       this.select = false
+      
+    }else{
+     alert('Zaznacz odpowiedz i przejdz o 20 pytań do przodu')
     }
     },
     restartQuiz(){
