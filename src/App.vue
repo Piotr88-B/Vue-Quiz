@@ -4010,6 +4010,7 @@ export default {
     select: false,
     score: 0,
     inscore:0,
+    case: 0,
     // props: ['source'],
 
     }
@@ -4027,14 +4028,14 @@ export default {
     },
 
    addPoint() {
-     if(this.b >= (this.inscore + this.score)+1){
+     if(this.b == (this.inscore + this.score)+1){
        this.score++
        return
      }
    },
 
     inPoint(){
-       if(this.b >= (this.inscore + this.score)+1){
+       if(this.b == (this.inscore + this.score)+1){
        this.inscore++
        return
      }
@@ -4049,7 +4050,7 @@ export default {
       }
     },
     nextQuestion(){
-       if(this.a <= (this.questions.length-2)  ){
+       if(this.a <= (this.questions.length-2) && this.select == true ){
       this.a++
       this.b++
       this.select = false
@@ -4059,6 +4060,7 @@ export default {
       if(this.a <= (this.questions.length -10) ){
       this.a = this.a +20
       this.b = this.b +20
+      this.inscore = this.inscore +20
       this.select = false
     }
     },
